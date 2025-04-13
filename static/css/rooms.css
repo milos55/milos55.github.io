@@ -1,0 +1,64 @@
+body {
+    background-color: #5F7161;
+    color: #f4f3f2;
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 300px; /* Adjust size as needed */
+    height: 400px; /* Adjust size as needed */
+    background-image: url('../images/plant.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    z-index: -1;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  
+  /* Left side plant */
+  body::before {
+    content: '';
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 300px; /* Adjust size as needed */
+    height: 400px; /* Adjust size as needed */
+    background-image: url('../images/plant.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    z-index: -1;
+    opacity: 0.5;
+    pointer-events: none;
+    transform: scaleX(-1); /* Flip horizontally for visual variation */
+  }
+
+.col-sm-4 {
+    box-shadow: #333a3f 0px 0px 10px;
+    border-radius: 15px;
+    border: #333a3f 3px solid;
+    margin: 5px;
+    width: 100%;
+    height: 200px;
+    background-color: #6D8B74;
+}
+
+.col-sm-4 h3 {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.col-sm-4 p {
+    font-size: 18px;
+    text-align: left;
+}
