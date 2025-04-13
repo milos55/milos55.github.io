@@ -76,6 +76,12 @@ body::after {
     transition: transform 0.2s;
 }
 
+.col-sm-4 #chef {
+    object-fit: contain; /* Shows the full image */
+    height: auto; /* Allow height to adjust based on aspect ratio */
+    max-height: 300px; /* Optional: still limit maximum height */
+}
+
 .col-sm-4 #strnovac {
     object-position: left center;
 }
